@@ -8,7 +8,7 @@ import{Persona} from '../Models/persona';
 export class PruebaService {
 
   constructor( private http:HttpClient) { }
-  Url = 'http://localhost:3000/Persona/'
+  Url = 'https://backsuple.herokuapp.com/Persona/'
 
   crearPersona(persona:Persona){
     return this.http.post(`${this.Url}crearPersona`,persona);
